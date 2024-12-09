@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Sudoku Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        .image-container {
+            position: relative;
+            width: 450px;
+            height: 450px;
+            margin: 20px auto;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        img {
+            max-width: 400px;
+            /*position: absolute;*/
+            /*transform-origin: center center;*/
+            /*transition: transform 0.2s ease;*/
+        }
+        /*img {*/
+        /*    border: 5px solid #555;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+<div class="container">
+    <div class="row">
+    <div class="col">
+      <h2>Original</h2>
+    </div>
+    <div class="col">
+      <h2>Canny detection</h2>
+    </div>
+    <div class="col">
+      <h2>Solved sudoku</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img id="original" src="{{ original_url }}" alt="Original">
+    </div>
+    <div class="col">
+      <img id="canny" src="{{ canny_url }}" alt="Canny">
+    </div>
+    <div class="col">
+      <img id="final" src="{{ final_url }}" alt="Final">
+    </div>
+  </div>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" onclick="location.href = '/'">Home</button>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+</body>
+</html>
